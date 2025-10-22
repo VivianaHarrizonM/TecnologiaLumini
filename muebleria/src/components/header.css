@@ -1,0 +1,99 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111; /* fondo negro elegante */
+  color: #f5f5f5;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* LOGO */
+#logo img {
+  width: 120px;
+  height: auto;
+/* filter: brightness(0) invert(2); para mantener el logo visible en fondo oscuro */
+}
+
+/* MENÚ PRINCIPAL */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+  color: #f5c000; /* amarillo dorado */
+  border-bottom: 2px solid #f5c000;
+}
+
+/* LOGIN / REGISTRO */
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.login a:hover {
+  color: #f5c000;
+}
+
+/* BOTÓN DE REGISTRO */
+#registro {
+  background-color: #f5c000; /* amarillo dorado */
+  color: #111;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#registro:hover {
+  background-color: #ffd43b;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .login {
+    justify-content: center;
+  }
+
+  #registro {
+    padding: 8px 14px;
+  }
+}

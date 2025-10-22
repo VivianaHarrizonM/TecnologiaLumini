@@ -1,0 +1,291 @@
+
+:root {
+  --color-bg: #111;
+  --color-bg-alt: #1b1b1b;
+  --color-text: #f5f5f5;
+  --color-accent: #f5c000; /* dorado */
+  --color-hover: #ffd43b;
+  --color-muted: #aaa;
+  --font-main: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* =======================================
+    SECCIÓN PRINCIPAL (Hero)
+   ======================================= */
+  .overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#one-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: var(--color-bg);
+}
+
+#left-section {
+  max-width: 50%;
+}
+
+#left-section h1 {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  margin-bottom: 15px;
+}
+
+#left-section h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+#left-section p {
+  color: var(--color-muted);
+  margin: 20px 0 30px;
+}
+
+#right-section img {
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+/* BOTONES GENERALES */
+.boton {
+  background-color: var(--color-accent);
+  color: #111;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+  background-color: var(--color-hover);
+  transform: translateY(-2px);
+}
+
+/* =======================================
+    SEGUNDA SECCIÓN (Stats)
+   ======================================= */
+#two-section {
+  background: var(--color-bg-alt);
+  padding: 80px 10%;
+  text-align: center;
+}
+
+#one-div-two-section img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.text-slogan {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+#contend-target {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.target {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.target:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 10px rgba(245, 192, 0, 0.3);
+}
+
+.subtitulos {
+  color: var(--color-accent);
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.text-page {
+  color: var(--color-muted);
+}
+
+/* =======================================
+  SECCIÓN FEATURES (three-section)
+   ======================================= */
+.three-section {
+  background: var(--color-bg);
+  padding: 80px 10%;
+}
+
+.section-information {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.more-information {
+  color: var(--color-accent);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.more-information:hover {
+  color: var(--color-hover);
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.information:hover {
+  transform: translateY(-4px);
+  background: #222;
+}
+
+.information img {
+  width: 60px;
+  height: 60px;
+}
+
+/* =======================================
+    SECCIÓN CALL TO ACTION (four-section)
+   ======================================= */
+.four-section {
+  background: var(--color-bg-alt);
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-plaza {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.section-plaza img {
+  width: 400px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* =======================================
+    SECCIÓN FINAL (five-section)
+   ======================================= */
+.five-section {
+  background: var(--color-bg);
+  padding: 80px 10%;
+}
+
+.information-sect-five {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.section-alcances {
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+.section-alcances h2 {
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.section-alcances p {
+  color: var(--color-muted);
+}
+
+/* =======================================
+    RESPONSIVE DESIGN
+   ======================================= */
+@media (max-width: 900px) {
+  #one-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #left-section {
+    max-width: 100%;
+  }
+
+  #right-section img {
+    max-width: 100%;
+  }
+
+  #contend-target {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-plaza,
+  .information-sect-five {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-plaza img,
+  .information-sect-five img {
+    max-width: 100%;
+  }
+}
