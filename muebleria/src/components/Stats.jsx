@@ -47,7 +47,7 @@ export const Stats = ({ setView }) => {
       </div>
       <div id="div-boton">
         <button
-          className="boton"
+          className="boton botn"
           onClick={() => setView("registro")}
         >
           REGÍSTRATE AHORA
